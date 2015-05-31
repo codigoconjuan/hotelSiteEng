@@ -1,14 +1,4 @@
-Will become a heading
+Hotel Website for Course in Udemy
 ==============
 
-Will become a sub heading
---------------
-
-*This will be Italic*
-
-**This will be Bold**
-
-- This will be a list item
-- This will be a list item
-
-    Add a indent and this will end up as code
+This website was developed for my Course at Udemy about how to use Zurb Foundation 5, SASS, COMPASS, and add some HTML5 with CSS3 in Udemy.
