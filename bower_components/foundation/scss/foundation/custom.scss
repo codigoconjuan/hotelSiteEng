@@ -1,20 +1,26 @@
 h2 {
 	color:$blue;
 	text-transform:uppercase;
-	margin: 10px 0;
+	margin: rem-calc(0 0 30 0);
+}
+h3 {
+	color:$primary-color;
+	text-transform:uppercase;
 }
 h2:after {
 	  content: " ";
 	  display: block;
 	  background-color: $blue;
-	  width: 40px;
-	  height: 6px;
+	  width: rem-calc(40);
+	  height: rem-calc(6);
 	  margin: 0 auto;
 }
 
+
+
 footer {
 	background-color:$blue;
-	padding-top:20px;
+	padding-top:rem-calc(30);
 	p {
 		color:$white;
 	}
@@ -25,18 +31,63 @@ footer {
 		color:$white;
 		text-transform: uppercase;
 	}
+	.footer-nav {
+		  @include side-nav(
+		    $divider-color: '#fff',
+		    $font-size:rem-calc(16),
+		    $link-color:#ffffff,
+		    $link-color-active: #ffffff,
+		    $link-color-hover: #ffffff,
+		    $link-bg-hover:transparent
+		  );
+
+		  li {
+		  	margin:rem-calc(0);
+			  a {
+			  	text-transform:uppercase;
+			  }
+		  }
+
+
+	}
+
+	input[type="text"].newsletter{
+
+	  @include grid-column($columns:12);
+	  box-shadow:none;
+	}
+}
+
+
+
+.room-panel {
+  @include panel(
+    $bg:$silver,
+    $padding:rem-calc(20),
+    $adjust:false,
+    $border:false
+  );
+  color:$primary-color!important,
 
 }
 
-.footer-nav {
-  @include side-nav(
-    $divider-color: '#fff',
-    $font-size:1.2em,
-    $link-color:#ffffff,
-    $link-color-active: #ffffff,
-    $link-color-hover: #ffffff,
-    $link-bg-hover:transparent
+
+.view-all {
+  @include button(
+  	$padding: rem-calc(10),
+    $bg: $orange,
+	$radius:true
   );
+  border-radius: rem-calc(10);
+}
+
+
+/*** SERVICES ***/
+
+.service {
+	h2 {
+		margin-top:rem-calc(20);
+	}
 }
 
 @media #{$small-up} { 
@@ -46,10 +97,28 @@ footer {
 
  }
 
-@media #{$medium-up} { }
+@media #{$medium-up} {
+
+	footer {
+		margin-top:rem-calc(20);
+	}
+	.service {
+		h2 {
+			margin-top:rem-calc(40);
+		}
+	}
+
+ }
 @media #{$medium-only} { }
 
-@media #{$large-up} { }
+@media #{$large-up} {
+	.orbit-caption {
+		width: auto!important;
+		padding: rem-calc(30 20);
+		margin-bottom: rem-calc(50);
+	}
+
+ }
 @media #{$large-only} { }
 
 @media #{$xlarge-up} { }
