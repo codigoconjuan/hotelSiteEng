@@ -1,5 +1,5 @@
 h2 {
-	color:$blue;
+	color:$primary-color;
 	text-transform:uppercase;
 	margin: rem-calc(0 0 30 0);
 }
@@ -10,16 +10,72 @@ h3 {
 h2:after {
 	  content: " ";
 	  display: block;
-	  background-color: $blue;
+	  background-color: $primary-color;
 	  width: rem-calc(40);
 	  height: rem-calc(6);
 	  margin: 0 auto;
 }
+.logo {
+	margin-top: rem-calc(20);
+	margin-bottom:rem-calc(20);
+}
+div.slider {
+	margin-bottom:rem-calc(20);
+}
+section.featured-image {
+	position: relative;
+	margin-bottom: rem-calc(20);
 
+		.featured-text {
+			position: absolute; 
+			left:0;
+			bottom: 0;
+			padding: rem-calc(10 20);
+			background-color: $primary-color;
+			color: $white;
 
+			p {
+				margin:0;
+			}
+		}
+}
+
+.room-info {
+   overflow: hidden;
+   cursor:pointer;
+    position: relative;
+
+		.more-information {
+			background-color: rgba($primary-color, 0.8);
+		    height: 100%;
+		    padding-top: rem-calc(110);
+		    position: absolute;
+		    right: 0;
+		    top: 0;
+		    width:100%;
+		    opacity:0;
+		    transition: all 1s ease;
+
+		     a {
+				font-size: rem-calc(24);
+				border: 5px solid $white;
+				width: 80%;
+				margin: 0 auto;
+				color:$white;
+		     }
+		}
+}
+
+.room-info:hover {
+	
+	.more-information {
+		opacity:1;
+
+	}
+}
 
 footer {
-	background-color:$blue;
+	background-color:$primary-color;
 	padding-top:rem-calc(30);
 	p {
 		color:$white;
@@ -40,26 +96,20 @@ footer {
 		    $link-color-hover: #ffffff,
 		    $link-bg-hover:transparent
 		  );
-
 		  li {
 		  	margin:rem-calc(0);
 			  a {
 			  	text-transform:uppercase;
 			  }
 		  }
-
-
 	}
-
 	input[type="text"].newsletter{
-
-	  @include grid-column($columns:12);
-	  box-shadow:none;
+		  @include grid-column($columns:12);
+		  box-shadow:none;
 	}
 }
 
-
-
+/** ROOMS **/
 .room-panel {
   @include panel(
     $bg:$silver,
@@ -67,26 +117,67 @@ footer {
     $adjust:false,
     $border:false
   );
-  color:$primary-color!important,
+  color:$primary-color!important;
+
 
 }
 
-
-.view-all {
+/** View All Butoon***/
+.custom-button {
   @include button(
   	$padding: rem-calc(10),
-    $bg: $orange,
+    $bg: $secondary-color,
 	$radius:true
   );
-  border-radius: rem-calc(10);
+  border-radius: rem-calc(10)!important;
 }
 
-
 /*** SERVICES ***/
-
 .service {
 	h2 {
 		margin-top:rem-calc(20);
+	}
+}
+
+/** Rooms Accordion **/
+.accordion  {
+	  /*@include accordion-container; */
+	  .accordion-navigation {
+		    @include accordion-navigation(
+				$bg: $primary-color,
+				$padding: rem-calc(8),
+				$hover-bg: $secondary-color,
+				$active-bg: $secondary-color,
+				$font-color: $white,
+				$font-size: rem-calc(20)
+		    );
+	    text-transform:uppercase;
+	  }
+	  .content  {
+	    @include accordion-content;
+	    text-transform:none;
+	  }
+}
+
+form {
+	background-color:$silver;
+
+	fieldset {
+
+		legend {
+			background-color:$secondary-color;
+			width:100%;
+			text-align:center;
+			color:$white;
+			font-size: rem-calc(22);
+			text-transform:uppercase;
+		}
+
+		label {
+			text-transform:uppercase;
+		}
+
+		
 	}
 }
 
@@ -94,17 +185,26 @@ footer {
 
 }
 @media #{$small-only} {
-
+		label.inline {
+			margin:0;padding:0;
+		}
  }
 
 @media #{$medium-up} {
+	
+	section.featured-image {
+		.featured-text {
 
+			bottom: rem-calc(30);
+			padding: rem-calc(10 50);
+		}
+	}
 	footer {
 		margin-top:rem-calc(20);
 	}
 	.service {
 		h2 {
-			margin-top:rem-calc(40);
+			margin-top:rem-calc(60);
 		}
 	}
 
@@ -116,6 +216,9 @@ footer {
 		width: auto!important;
 		padding: rem-calc(30 20);
 		margin-bottom: rem-calc(50);
+	}
+	.room-panel  {
+		margin-bottom:0;
 	}
 
  }

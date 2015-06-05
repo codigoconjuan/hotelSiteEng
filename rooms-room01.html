@@ -54,17 +54,16 @@
 
 
 
-    <div class="row featured-image">
-          <div class="columns">
-                <img data-interchange="[img/hotel-images/featured-images/small/room01.jpg, (small)], 
-                                       [img/hotel-images/featured-images/medium/room01.jpg, (medium)], 
-                                       [img/hotel-images/featured-images/large/room01.jpg, (large)] ">
-          </div> <!--.columns -->
-
-          <div class="featured-text">
-              <p>Services to make your stay as comfortable as possible.</p>
-          </div>
-    </div> <!--.featured-image -->
+    <section  class="row small-collapse featured-image">
+        <div class="column">
+              <img data-interchange="[img/hotel-images/featured-images/small/room01.jpg, (small)], 
+                                     [img/hotel-images/featured-images/medium/room01.jpg, (medium)], 
+                                     [img/hotel-images/featured-images/large/room01.jpg, (large)] ">
+              <div class="featured-text">
+                <p>Room Number 01.</p>
+              </div>
+        </div><!--.featured-image -->
+    </section> <!--.row -->
 
     <section class="main-content">
           <div class="row">
@@ -126,8 +125,10 @@
 
 
                       <div class="contact-form">
-                          <h3 class="text-center">Reservation Form</h3>
+
                           <form action="#">
+                            <fieldset>
+                              <legend>Reservation form</legend>
                                 <div class="row">
                                     <div class="medium-4 columns">
                                            <label for="name" class=" inline">Name:</label>
@@ -142,7 +143,7 @@
                                            <label for="mail" class=" inline">Email:</label>
                                     </div>
                                     <div class="medium-8 columns">
-                                             <input type="text" id="mail" placeholder="your email">
+                                             <input class="custom-prefix-class" type="text" id="mail" placeholder="your email">
                                     </div>
                                 </div> <!--.row (end of field) -->
 
@@ -159,11 +160,11 @@
                                 </div> <!--.row (end of field) -->
                                 
                                 <div class="row">
-                                     <input type="submit" class="button secondary" value="Send">
+                                     <input type="submit" class="custom-button " value="Send">
                                 </div><!--.row (end of field) -->
-
+                            </fieldset>
                           </form>
-                    </div> <!--.form-->
+                    </div> <!--.contact-form-->
 
                 </div> <!--.medium-4 columns-->
 
