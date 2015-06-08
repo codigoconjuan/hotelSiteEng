@@ -7028,7 +7028,7 @@ meta.foundation-mq-topbar {
 }
 /* line 331, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li {
-  background: #ff3535;
+  background: #0068ba;
 }
 /* line 334, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li > a {
@@ -9462,23 +9462,41 @@ h2:after {
   margin: 0 auto;
 }
 
-/* line 18, ../bower_components/foundation/scss/foundation/custom.scss */
+/** SOCIAL MENU**/
+/* line 21, ../bower_components/foundation/scss/foundation/custom.scss */
+.menu-social li {
+  background-color: transparent !important;
+  display: inline-block;
+  margin-right: 1.25rem;
+}
+/* line 25, ../bower_components/foundation/scss/foundation/custom.scss */
+.menu-social li a {
+  background-color: transparent !important;
+  padding: 0;
+  margin: 0;
+}
+/* line 29, ../bower_components/foundation/scss/foundation/custom.scss */
+.menu-social li a i {
+  font-size: 2.5rem;
+}
+
+/* line 36, ../bower_components/foundation/scss/foundation/custom.scss */
 .logo {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
 }
 
-/* line 22, ../bower_components/foundation/scss/foundation/custom.scss */
+/* line 40, ../bower_components/foundation/scss/foundation/custom.scss */
 div.slider {
   margin-bottom: 1.25rem;
 }
 
-/* line 25, ../bower_components/foundation/scss/foundation/custom.scss */
+/* line 43, ../bower_components/foundation/scss/foundation/custom.scss */
 section.featured-image {
   position: relative;
   margin-bottom: 1.25rem;
 }
-/* line 29, ../bower_components/foundation/scss/foundation/custom.scss */
+/* line 47, ../bower_components/foundation/scss/foundation/custom.scss */
 section.featured-image .featured-text {
   position: absolute;
   left: 0;
@@ -9487,22 +9505,22 @@ section.featured-image .featured-text {
   background-color: #0068ba;
   color: #FFFFFF;
 }
-/* line 37, ../bower_components/foundation/scss/foundation/custom.scss */
+/* line 55, ../bower_components/foundation/scss/foundation/custom.scss */
 section.featured-image .featured-text p {
   margin: 0;
 }
 
-/* line 43, ../bower_components/foundation/scss/foundation/custom.scss */
+/* line 61, ../bower_components/foundation/scss/foundation/custom.scss */
 .room-info {
   overflow: hidden;
   cursor: pointer;
   position: relative;
 }
-/* line 48, ../bower_components/foundation/scss/foundation/custom.scss */
+/* line 66, ../bower_components/foundation/scss/foundation/custom.scss */
 .room-info .more-information {
   background-color: rgba(0, 104, 186, 0.8);
+  background-clip: content-box;
   height: 100%;
-  padding-top: 6.875rem;
   position: absolute;
   right: 0;
   top: 0;
@@ -9510,7 +9528,7 @@ section.featured-image .featured-text p {
   opacity: 0;
   transition: all 1s ease;
 }
-/* line 59, ../bower_components/foundation/scss/foundation/custom.scss */
+/* line 77, ../bower_components/foundation/scss/foundation/custom.scss */
 .room-info .more-information a {
   font-size: 1.5rem;
   border: 5px solid #FFFFFF;
@@ -9519,30 +9537,30 @@ section.featured-image .featured-text p {
   color: #FFFFFF;
 }
 
-/* line 71, ../bower_components/foundation/scss/foundation/custom.scss */
+/* line 89, ../bower_components/foundation/scss/foundation/custom.scss */
 .room-info:hover .more-information {
   opacity: 1;
 }
 
-/* line 77, ../bower_components/foundation/scss/foundation/custom.scss */
+/* line 95, ../bower_components/foundation/scss/foundation/custom.scss */
 footer {
   background-color: #0068ba;
   padding-top: 1.875rem;
 }
-/* line 80, ../bower_components/foundation/scss/foundation/custom.scss */
+/* line 98, ../bower_components/foundation/scss/foundation/custom.scss */
 footer p {
   color: #FFFFFF;
 }
-/* line 83, ../bower_components/foundation/scss/foundation/custom.scss */
+/* line 101, ../bower_components/foundation/scss/foundation/custom.scss */
 footer a {
   color: #FFFFFF;
 }
-/* line 86, ../bower_components/foundation/scss/foundation/custom.scss */
+/* line 104, ../bower_components/foundation/scss/foundation/custom.scss */
 footer h4 {
   color: #FFFFFF;
   text-transform: uppercase;
 }
-/* line 90, ../bower_components/foundation/scss/foundation/custom.scss */
+/* line 108, ../bower_components/foundation/scss/foundation/custom.scss */
 footer .footer-nav {
   display: block;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
@@ -9594,15 +9612,15 @@ footer .footer-nav li.heading {
   font-weight: bold;
   text-transform: uppercase;
 }
-/* line 99, ../bower_components/foundation/scss/foundation/custom.scss */
+/* line 117, ../bower_components/foundation/scss/foundation/custom.scss */
 footer .footer-nav li {
   margin: 0;
 }
-/* line 101, ../bower_components/foundation/scss/foundation/custom.scss */
+/* line 119, ../bower_components/foundation/scss/foundation/custom.scss */
 footer .footer-nav li a {
   text-transform: uppercase;
 }
-/* line 106, ../bower_components/foundation/scss/foundation/custom.scss */
+/* line 124, ../bower_components/foundation/scss/foundation/custom.scss */
 footer input[type="text"].newsletter {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -9610,9 +9628,39 @@ footer input[type="text"].newsletter {
   float: left;
   box-shadow: none;
 }
+/* line 132, ../bower_components/foundation/scss/foundation/custom.scss */
+footer div.newsletter div.suscribe-form {
+  position: relative;
+}
+/* line 136, ../bower_components/foundation/scss/foundation/custom.scss */
+footer div.newsletter div.suscribe-form a.submit-newsletter {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #004072;
+  border: none;
+  width: 2.4375rem;
+  height: 2.4375rem;
+  text-align: center;
+}
+/* line 146, ../bower_components/foundation/scss/foundation/custom.scss */
+footer div.newsletter div.suscribe-form a.submit-newsletter i {
+  font-size: 1.875rem;
+  line-height: 2.4375rem;
+}
+/* line 152, ../bower_components/foundation/scss/foundation/custom.scss */
+footer div.newsletter div.suscribe-form a:hover {
+  color: #FFFFFF;
+}
+/* line 157, ../bower_components/foundation/scss/foundation/custom.scss */
+footer p.reserved {
+  background-color: #004072;
+  padding: 0.625rem 0;
+  margin-bottom: 0;
+}
 
 /** ROOMS **/
-/* line 113, ../bower_components/foundation/scss/foundation/custom.scss */
+/* line 165, ../bower_components/foundation/scss/foundation/custom.scss */
 .room-panel {
   border-style: none;
   border-width: 0;
@@ -9632,7 +9680,7 @@ footer input[type="text"].newsletter {
 }
 
 /** View All Butoon***/
-/* line 126, ../bower_components/foundation/scss/foundation/custom.scss */
+/* line 178, ../bower_components/foundation/scss/foundation/custom.scss */
 .custom-button {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -9656,6 +9704,7 @@ footer input[type="text"].newsletter {
   border-radius: 3px;
   transition: background-color 300ms ease-out;
   border-radius: 0.625rem !important;
+  margin: 1.25rem 0;
 }
 /* line 158, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
 .custom-button:hover, .custom-button:focus {
@@ -9667,17 +9716,17 @@ footer input[type="text"].newsletter {
 }
 
 /*** SERVICES ***/
-/* line 137, ../bower_components/foundation/scss/foundation/custom.scss */
+/* line 190, ../bower_components/foundation/scss/foundation/custom.scss */
 .service h2 {
   margin-top: 1.25rem;
 }
 
 /** Rooms Accordion **/
-/* line 143, ../bower_components/foundation/scss/foundation/custom.scss */
+/* line 196, ../bower_components/foundation/scss/foundation/custom.scss */
 .accordion {
   /*@include accordion-container; */
 }
-/* line 145, ../bower_components/foundation/scss/foundation/custom.scss */
+/* line 198, ../bower_components/foundation/scss/foundation/custom.scss */
 .accordion .accordion-navigation {
   display: block;
   margin-bottom: 0 !important;
@@ -9700,7 +9749,7 @@ footer input[type="text"].newsletter {
 .accordion .accordion-navigation > a:hover {
   background: #ff3535;
 }
-/* line 156, ../bower_components/foundation/scss/foundation/custom.scss */
+/* line 209, ../bower_components/foundation/scss/foundation/custom.scss */
 .accordion .content {
   display: none;
   padding: 0.9375rem;
@@ -9712,11 +9761,11 @@ footer input[type="text"].newsletter {
   display: block;
 }
 
-/* line 162, ../bower_components/foundation/scss/foundation/custom.scss */
+/* line 215, ../bower_components/foundation/scss/foundation/custom.scss */
 form {
   background-color: #f2f2f2;
 }
-/* line 167, ../bower_components/foundation/scss/foundation/custom.scss */
+/* line 220, ../bower_components/foundation/scss/foundation/custom.scss */
 form fieldset legend {
   background-color: #ff3535;
   width: 100%;
@@ -9725,44 +9774,44 @@ form fieldset legend {
   font-size: 1.375rem;
   text-transform: uppercase;
 }
-/* line 176, ../bower_components/foundation/scss/foundation/custom.scss */
+/* line 229, ../bower_components/foundation/scss/foundation/custom.scss */
 form fieldset label {
   text-transform: uppercase;
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 188, ../bower_components/foundation/scss/foundation/custom.scss */
+  /* line 241, ../bower_components/foundation/scss/foundation/custom.scss */
   label.inline {
     margin: 0;
     padding: 0;
   }
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 196, ../bower_components/foundation/scss/foundation/custom.scss */
+  /* line 249, ../bower_components/foundation/scss/foundation/custom.scss */
   section.featured-image .featured-text {
     bottom: 1.875rem;
     padding: 0.625rem 3.125rem;
   }
 
-  /* line 202, ../bower_components/foundation/scss/foundation/custom.scss */
+  /* line 255, ../bower_components/foundation/scss/foundation/custom.scss */
   footer {
     margin-top: 1.25rem;
   }
 
-  /* line 206, ../bower_components/foundation/scss/foundation/custom.scss */
+  /* line 259, ../bower_components/foundation/scss/foundation/custom.scss */
   .service h2 {
     margin-top: 3.75rem;
   }
 }
 @media only screen and (min-width: 64.0625em) {
-  /* line 215, ../bower_components/foundation/scss/foundation/custom.scss */
+  /* line 268, ../bower_components/foundation/scss/foundation/custom.scss */
   .orbit-caption {
     width: auto !important;
     padding: 1.875rem 1.25rem;
     margin-bottom: 3.125rem;
   }
 
-  /* line 220, ../bower_components/foundation/scss/foundation/custom.scss */
+  /* line 273, ../bower_components/foundation/scss/foundation/custom.scss */
   .room-panel {
     margin-bottom: 0;
   }

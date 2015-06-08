@@ -15,6 +15,24 @@ h2:after {
 	  height: rem-calc(6);
 	  margin: 0 auto;
 }
+
+/** SOCIAL MENU**/
+.menu-social {
+	li {
+		background-color:transparent!important;
+		display:inline-block;
+		margin-right:rem-calc(20);
+		a {
+			background-color:transparent!important;
+			padding:0;
+			margin:0;
+			i {
+				font-size: rem-calc(40);
+			}
+		}
+	}
+}
+
 .logo {
 	margin-top: rem-calc(20);
 	margin-bottom:rem-calc(20);
@@ -47,8 +65,8 @@ section.featured-image {
 
 		.more-information {
 			background-color: rgba($primary-color, 0.8);
+			background-clip: content-box;
 		    height: 100%;
-		    padding-top: rem-calc(110);
 		    position: absolute;
 		    right: 0;
 		    top: 0;
@@ -107,6 +125,40 @@ footer {
 		  @include grid-column($columns:12);
 		  box-shadow:none;
 	}
+
+	div.newsletter {
+
+
+			div.suscribe-form {
+
+				position:relative;
+
+					a.submit-newsletter{
+						position: absolute;
+						top:0;
+						right:0;
+						background-color: $darkerblue;
+						border:none;
+						width: rem-calc(39);
+						height:rem-calc(39);
+						text-align: center;
+
+						i {
+							font-size: rem-calc(30);
+							line-height:rem-calc(39);
+						}
+
+					}
+					a:hover {
+						color:$white;
+					}
+			}
+	}
+	p.reserved {
+		background-color: $darkerblue;
+		padding: rem-calc(10 0);
+		margin-bottom:0;
+	}
 }
 
 /** ROOMS **/
@@ -130,6 +182,7 @@ footer {
 	$radius:true
   );
   border-radius: rem-calc(10)!important;
+  margin: rem-calc(20 0);
 }
 
 /*** SERVICES ***/
