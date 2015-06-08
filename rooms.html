@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation</title>
+    <title>Rooms</title>
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/foundation-icons.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
-  <body>
-     <header class="contain-to-grid">
+  <body class="room rooms">
+    <header class="contain-to-grid">
         <nav class="top-bar " data-topbar role="navigation">
               <ul class="title-area">
                     <li class="name show-for-small">
@@ -38,6 +38,7 @@
                         </li> <!--.has-dropdown-->
                         <li><a href="contact.html">Contact</a></li>
                   </ul> <!--.left-->
+
                   <ul class="menu-social right">
                         <li><a href="facebook.com"><i class="fi-social-facebook"></i></a></li>
                         <li><a href="twitter.com"><i class="fi-social-twitter"></i></a></li>
@@ -75,7 +76,7 @@
                                           [img/hotel-images/medium/rooms/room01.jpg, (medium)], 
                                           [img/hotel-images/default/rooms/room01.jpg, (large)] ">
                   <div class="panel">
-                    <h3 class="text-center">Room 1</h3>
+                      <h3 class="text-center"><a href="rooms-room01.html">Room 1</a></h3>                    
                   </div>
               </div> <!--.large-4-->
 
@@ -85,7 +86,7 @@
                                           [img/hotel-images/medium/rooms/room02.jpg, (medium)], 
                                           [img/hotel-images/default/rooms/room02.jpg, (large)] ">
                   <div class="panel">
-                    <h3 class="text-center">Room 2</h3>
+                      <h3 class="text-center"><a href="rooms-room02.html">Room 2</a></h3>                    
                   </div>
               </div> <!--.large-4-->
 
@@ -95,7 +96,7 @@
                                           [img/hotel-images/medium/rooms/room03.jpg, (medium)], 
                                           [img/hotel-images/default/rooms/room03.jpg, (large)] ">
                   <div class="panel">
-                    <h3 class="text-center">Room 3</h3>
+                      <h3 class="text-center"><a href="rooms-room03.html">Room 3</a></h3>                    
                   </div>
               </div> <!--.large-4-->
 
@@ -105,7 +106,7 @@
                                           [img/hotel-images/medium/rooms/room04.jpg, (medium)], 
                                           [img/hotel-images/default/rooms/room04.jpg, (large)] ">
                   <div class="panel">
-                    <h3 class="text-center">Room 4</h3>
+                      <h3 class="text-center"><a href="rooms-room04.html">Room 4</a></h3>                    
                   </div>
               </div> <!--.large-4-->
 
@@ -115,7 +116,7 @@
                                           [img/hotel-images/medium/rooms/room05.jpg, (medium)], 
                                           [img/hotel-images/default/rooms/room05.jpg, (large)] ">
                   <div class="panel">
-                    <h3 class="text-center">Room 5 </h3>
+                      <h3 class="text-center"><a href="rooms-room05.html">Room 5</a></h3>       
                   </div>
               </div> <!--.large-4-->
 
@@ -125,12 +126,12 @@
                                           [img/hotel-images/medium/rooms/room06.jpg, (medium)], 
                                           [img/hotel-images/default/rooms/room06.jpg, (large)] ">
                   <div class="panel">
-                    <h3 class="text-center">Room 6</h3>
+                      <h3 class="text-center"><a href="rooms-room06.html">Room 6</a></h3>                    
                   </div>
               </div> <!--.large-4-->
     </section> <!--.main-content-->
 
-    <footer>
+   <footer>
         <div class="row">
           <div class="large-2 columns large-offset-1">
               <h4>Navigation</h4>
@@ -147,7 +148,12 @@
               <div class="row">
                   <div class="medium-12 columns newsletter">
                         <p>Suscribe to our newsletter and receive exclusive deals in your e-mail</p>
-                        <input type="text" placeholder="your e-mail"  class="newsletter" />
+                        <div class="suscribe-form">
+                            <input type="text" placeholder="your e-mail"  class="newsletter" />
+                            <a href="#" class="submit-newsletter">
+                                <i class="fi-mail"></i>
+                            </a>
+                        </div>
                   </div>
               </div> <!--.row-->
 
@@ -159,8 +165,10 @@
                         </ul>
                     </div>  <!--social-footer-menu-->
               </div> <!--.row-->
-          </div>
+          </div> <!--.large-4  -->
         </div>
+
+        <p class="reserved text-center">All rights reserved</p>
     </footer>
 
     

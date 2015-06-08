@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation</title>
+    <title>Room 01</title>
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/foundation-icons.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
-  <body>
+  <body class="room">
     <header class="contain-to-grid">
         <nav class="top-bar " data-topbar role="navigation">
               <ul class="title-area">
@@ -38,6 +38,7 @@
                         </li> <!--.has-dropdown-->
                         <li><a href="contact.html">Contact</a></li>
                   </ul> <!--.left-->
+
                   <ul class="menu-social right">
                         <li><a href="facebook.com"><i class="fi-social-facebook"></i></a></li>
                         <li><a href="twitter.com"><i class="fi-social-twitter"></i></a></li>
@@ -70,7 +71,7 @@
                 <div class="medium-8 columns">
                     <h2 class="text-center">About this Room</h2>
                     <ul class="accordion" data-accordion>
-                          <li class="accordion-navigation">
+                          <li class="accordion-navigation active">
                               <a href="#general" class="text-center">General Info</a>
                               <div id="general" class="content active">
                                 Aliquam consequat, nunc et sodales finibus, felis justo consequat lectus, eget molestie eros elit et lectus. Maecenas a sollicitudin diam, varius hendrerit sapien. Nam eget nisl nibh. Vivamus id lectus ultricies, ullamcorper dui at, tempus tortor. In pulvinar eleifend diam. Mauris dignissim pharetra arcu sit amet congue. Donec urna diam, pharetra a felis quis, fermentum laoreet mauris. Nam sit amet quam mauris. Morbi quis nibh non elit vestibulum congue ac sit amet arcu.
@@ -190,7 +191,12 @@
               <div class="row">
                   <div class="medium-12 columns newsletter">
                         <p>Suscribe to our newsletter and receive exclusive deals in your e-mail</p>
-                        <input type="text" placeholder="your e-mail"  class="newsletter" />
+                        <div class="suscribe-form">
+                            <input type="text" placeholder="your e-mail"  class="newsletter" />
+                            <a href="#" class="submit-newsletter">
+                                <i class="fi-mail"></i>
+                            </a>
+                        </div>
                   </div>
               </div> <!--.row-->
 
@@ -202,8 +208,10 @@
                         </ul>
                     </div>  <!--social-footer-menu-->
               </div> <!--.row-->
-          </div>
+          </div> <!--.large-4  -->
         </div>
+
+        <p class="reserved text-center">All rights reserved</p>
     </footer>
 
     

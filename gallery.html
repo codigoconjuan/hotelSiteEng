@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/foundation-icons.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
-  <body>
+  <body class="gallery">
     <header class="contain-to-grid">
         <nav class="top-bar " data-topbar role="navigation">
               <ul class="title-area">
@@ -39,9 +39,9 @@
                         <li><a href="contact.html">Contact</a></li>
                   </ul> <!--.left-->
 
-                  <ul class="right">
-                        <li><a href="facebook.com">Facebook</a></li>
-                        <li><a href="twitter.com">Twitter</a></li>
+                  <ul class="menu-social right">
+                        <li><a href="facebook.com"><i class="fi-social-facebook"></i></a></li>
+                        <li><a href="twitter.com"><i class="fi-social-twitter"></i></a></li>
                   </ul>
               </section> <!--.top-bar-section-->
         </nav> <!--.top-bar-->
@@ -119,8 +119,7 @@
 
 
     
-
-    <footer>
+   <footer>
         <div class="row">
           <div class="large-2 columns large-offset-1">
               <h4>Navigation</h4>
@@ -137,7 +136,12 @@
               <div class="row">
                   <div class="medium-12 columns newsletter">
                         <p>Suscribe to our newsletter and receive exclusive deals in your e-mail</p>
-                        <input type="text" placeholder="your e-mail"  class="newsletter" />
+                        <div class="suscribe-form">
+                            <input type="text" placeholder="your e-mail"  class="newsletter" />
+                            <a href="#" class="submit-newsletter">
+                                <i class="fi-mail"></i>
+                            </a>
+                        </div>
                   </div>
               </div> <!--.row-->
 
@@ -149,10 +153,11 @@
                         </ul>
                     </div>  <!--social-footer-menu-->
               </div> <!--.row-->
-          </div>
+          </div> <!--.large-4  -->
         </div>
-    </footer>
 
+        <p class="reserved text-center">All rights reserved</p>
+    </footer>
     
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
